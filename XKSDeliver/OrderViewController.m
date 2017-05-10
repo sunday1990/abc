@@ -39,7 +39,6 @@ static NSString *pushCellreuseIdentifer   = @"PushCell";
 
     NSString *orderSerialNo;//订单编号，用户自己输入的
     NSString *customerId;   //店家id扫描获得的
-//    UIAlertController *alertDialog;
     NSDictionary *itemDic;
     BOOL alertOnShow;
 }
@@ -179,8 +178,7 @@ replacementString:(NSString *)string {
 
     _changeStatusView = chooseStatusView;
     [self.view addSubview:chooseStatusView];
-//    _orderTableView.frame = CGRectMake(0, UI_NAV_BAR_HEIGHT+44,WIDTH , HEIGHT-UI_NAV_BAR_HEIGHT-44-UI_TAB_BAR_HEIGHT);
-    _orderTableView.backgroundColor = ROOT_VIEW_BGCOLOR;
+    _orderTableView.backgroundColor = LIGHT_WHITE_COLOR;//ROOT_VIEW_BGCOLOR
     _orderTableView.tableFooterView = [[UIView alloc]init];
     
 }
@@ -345,8 +343,6 @@ replacementString:(NSString *)string {
                     pushOrderListCell.orderNum.backgroundColor = _TEXT_TIPGRAY_;
                     pushOrderListCell.orderNum.text = _historyNum;
                 }
-
-                
                 return pushOrderListCell;
             }
             else
@@ -1058,6 +1054,9 @@ replacementString:(NSString *)string {
 
         [_dataSource removeAllObjects];
         
+        
+        NSLog(@"跟踪问题log:%@",jsonDict);
+        
         [[SystemConfig shareSystemConfig]saveDeliverType:[jsonDict valueForKey:@"fullTimeWork"]];       //是否是驻店
         
         [[SystemConfig shareSystemConfig]saveIfHasAwardOrder:[[jsonDict valueForKey:@"hasAwardOrders"]stringValue]];//有没有抽奖
@@ -1406,8 +1405,10 @@ replacementString:(NSString *)string {
         orderSerialNo = @"";
 
         if ([jsonDict[@"result"]boolValue]==true) {
-            [self connetRunningOrderData];
-            [self headerRefresh];
+//            [self connetRunningOrderData];
+            
+            [self  connectHistoryOrderCompeletedNumData];
+//            [self headerRefresh];
         }else{
             [self headerRefresh];
 

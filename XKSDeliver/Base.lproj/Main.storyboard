@@ -153,7 +153,7 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="152" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VP5-ec-FAE">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="543"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="499"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="I1q-ND-fIe"/>
@@ -573,7 +573,7 @@
                                     <constraint firstItem="9le-fO-vaQ" firstAttribute="top" secondItem="VjL-fG-CRy" secondAttribute="top" id="AF5-Yt-gxB"/>
                                     <constraint firstItem="VP5-ec-FAE" firstAttribute="top" secondItem="9le-fO-vaQ" secondAttribute="bottom" id="Dwy-Yu-Pp5"/>
                                     <constraint firstAttribute="height" constant="500" id="H9d-Wm-R4e"/>
-                                    <constraint firstAttribute="bottom" secondItem="VP5-ec-FAE" secondAttribute="bottom" id="JGU-xh-JJn"/>
+                                    <constraint firstAttribute="bottom" secondItem="VP5-ec-FAE" secondAttribute="bottom" constant="44" id="JGU-xh-JJn"/>
                                     <constraint firstItem="VP5-ec-FAE" firstAttribute="leading" secondItem="VjL-fG-CRy" secondAttribute="leading" id="YqH-eS-RpP"/>
                                     <constraint firstItem="9le-fO-vaQ" firstAttribute="leading" secondItem="VjL-fG-CRy" secondAttribute="leading" id="fgn-gu-hJy"/>
                                     <constraint firstAttribute="trailing" secondItem="9le-fO-vaQ" secondAttribute="trailing" id="lMU-gK-G1Y"/>
