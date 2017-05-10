@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="netdataAddressCell" id="KGk-i7-Jjw" customClass="AddressListNetdataCell">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="299" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrow_btn.png" translatesAutoresizingMaskIntoConstraints="NO" id="wYZ-qu-sJb">
+                        <rect key="frame" x="287" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="99h-qS-4pU"/>
+                            <constraint firstAttribute="width" constant="15" id="Gtg-Ye-Srj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈拿多乐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCa-G7-Net">
+                        <rect key="frame" x="10" y="5" width="256" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海淀区中关村东路118号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xN6-rJ-oom">
+                        <rect key="frame" x="10" y="18" width="256" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bte-GB-PJ4">
+                        <rect key="frame" x="10" y="42" width="310" height="1"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="D65-OJ-Zpr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wYZ-qu-sJb" firstAttribute="leading" secondItem="xN6-rJ-oom" secondAttribute="trailing" id="2wc-rD-ItR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wYZ-qu-sJb" secondAttribute="trailing" constant="10" id="73e-7N-hEU"/>
+                    <constraint firstItem="wYZ-qu-sJb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9Bg-dH-ctg"/>
+                    <constraint firstAttribute="trailing" secondItem="bte-GB-PJ4" secondAttribute="trailing" id="Kew-Pi-0oc"/>
+                    <constraint firstItem="xN6-rJ-oom" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="MA7-1f-Fw5"/>
+                    <constraint firstItem="bte-GB-PJ4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QgW-Nc-MVU"/>
+                    <constraint firstItem="JCa-G7-Net" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UKD-xz-e4b"/>
+                    <constraint firstItem="xN6-rJ-oom" firstAttribute="height" secondItem="JCa-G7-Net" secondAttribute="height" id="cLj-QR-hpN"/>
+                    <constraint firstItem="JCa-G7-Net" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="dSz-c3-ndJ"/>
+                    <constraint firstAttribute="bottom" secondItem="xN6-rJ-oom" secondAttribute="bottom" constant="5" id="iE5-Hk-cwZ"/>
+                    <constraint firstItem="wYZ-qu-sJb" firstAttribute="leading" secondItem="JCa-G7-Net" secondAttribute="trailing" id="qYZ-dh-dXv"/>
+                    <constraint firstAttribute="bottom" secondItem="bte-GB-PJ4" secondAttribute="bottom" id="rnD-8E-RBs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainTitleLabel" destination="JCa-G7-Net" id="35Z-7O-kps"/>
+                <outlet property="subTitleLabel" destination="xN6-rJ-oom" id="01E-Ff-dhn"/>
+            </connections>
+            <point key="canvasLocation" x="149.5" y="242"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_btn.png" width="12" height="12"/>
+    </resources>
+</document>

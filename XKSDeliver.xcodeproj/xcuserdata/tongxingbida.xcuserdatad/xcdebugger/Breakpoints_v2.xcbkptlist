@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKSDeliver/ViewControllers/Secondpage/RemedyOrderViewController.m"
+            timestampString = "484825653.689704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "273"
+            endingLineNumber = "273"
+            landmarkName = "-remedyOrderBtClicked:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKSDeliver/ViewControllers/Secondpage/RemedyOrderViewController.m"
+            timestampString = "484824510.292304"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "-remedyOrderBtClicked:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RemedyOrderViewController remedyOrderBtClicked:]"
+                  moduleName = "XKSDeliver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tongxingbida/Desktop/XKSDeliver/XKSDeliver/ViewControllers/Secondpage/RemedyOrderViewController.m"
+                  timestampString = "486352275.035991"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253"
+                  offsetFromSymbolStart = "4104">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RemedyOrderViewController remedyOrderBtClicked:]"
+                  moduleName = "XKSDeliver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tongxingbida/Desktop/XKSDeliver/XKSDeliver/ViewControllers/Secondpage/RemedyOrderViewController.m"
+                  timestampString = "486352275.03618"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253"
+                  offsetFromSymbolStart = "4208">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XKSDeliver/ViewControllers/Secondpage/RemedyOrderViewController.m"
+            timestampString = "484824511.812166"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "-remedyOrderBtClicked:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RemedyOrderViewController remedyOrderBtClicked:]"
+                  moduleName = "XKSDeliver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tongxingbida/Desktop/XKSDeliver/XKSDeliver/ViewControllers/Secondpage/RemedyOrderViewController.m"
+                  timestampString = "486352275.037256"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "260"
+                  endingLineNumber = "260"
+                  offsetFromSymbolStart = "4676">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RemedyOrderViewController remedyOrderBtClicked:]"
+                  moduleName = "XKSDeliver"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tongxingbida/Desktop/XKSDeliver/XKSDeliver/ViewControllers/Secondpage/RemedyOrderViewController.m"
+                  timestampString = "486352275.037381"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "260"
+                  endingLineNumber = "260"
+                  offsetFromSymbolStart = "4780">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

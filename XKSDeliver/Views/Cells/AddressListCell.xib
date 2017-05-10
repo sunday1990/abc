@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="historyAddresCell" rowHeight="30" id="KGk-i7-Jjw" customClass="AddressListCell">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="318" height="29.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6X-yl-DFm">
+                        <rect key="frame" x="288" y="5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="edm-LP-1Bw"/>
+                            <constraint firstAttribute="height" constant="20" id="pib-p0-Evm"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="del.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大柳树北" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AS1-dq-sku">
+                        <rect key="frame" x="30" y="5" width="258" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-G7-vlL">
+                        <rect key="frame" x="10" y="28.5" width="308" height="1"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hm8-Wq-B2Q"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="history_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fmq-es-ufL">
+                        <rect key="frame" x="10" y="7" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="3iR-Ib-OrN"/>
+                            <constraint firstAttribute="height" constant="15" id="5iN-IJ-8D6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fmq-es-ufL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Aey-RJ-MsF"/>
+                    <constraint firstItem="WhV-G7-vlL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GN5-tK-rRN"/>
+                    <constraint firstItem="AS1-dq-sku" firstAttribute="leading" secondItem="Fmq-es-ufL" secondAttribute="trailing" constant="5" id="IBw-64-Fee"/>
+                    <constraint firstItem="Fmq-es-ufL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mpu-WW-iMJ"/>
+                    <constraint firstAttribute="trailing" secondItem="WhV-G7-vlL" secondAttribute="trailing" id="Ozv-EP-YYm"/>
+                    <constraint firstItem="a6X-yl-DFm" firstAttribute="leading" secondItem="AS1-dq-sku" secondAttribute="trailing" id="Q7N-sb-gJl"/>
+                    <constraint firstAttribute="trailing" secondItem="a6X-yl-DFm" secondAttribute="trailing" constant="10" id="RfQ-2W-J4U"/>
+                    <constraint firstItem="AS1-dq-sku" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cuL-IT-drk"/>
+                    <constraint firstItem="a6X-yl-DFm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hW1-mU-M4q"/>
+                    <constraint firstAttribute="bottom" secondItem="AS1-dq-sku" secondAttribute="bottom" constant="5" id="lNn-5r-DcL"/>
+                    <constraint firstAttribute="bottom" secondItem="WhV-G7-vlL" secondAttribute="bottom" id="rDf-5f-YFK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="a6X-yl-DFm" secondAttribute="trailing" constant="10" id="t0a-KH-A1l"/>
+                    <constraint firstItem="Fmq-es-ufL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="y4h-bN-tgz"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Aey-RJ-MsF"/>
+                        <exclude reference="t0a-KH-A1l"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteHistoryBt" destination="a6X-yl-DFm" id="vcc-Ue-6vK"/>
+                <outlet property="historyAddressLabel" destination="AS1-dq-sku" id="Bu9-mr-1dm"/>
+                <outlet property="listKindIV" destination="Fmq-es-ufL" id="9uV-ap-vQi"/>
+            </connections>
+            <point key="canvasLocation" x="225" y="237"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="del.png" width="16" height="16"/>
+        <image name="history_icon.png" width="14" height="14"/>
+    </resources>
+</document>
