@@ -59,6 +59,9 @@
 /**右边switch选择的第几个(从0开始)*/
 @property (nonatomic, assign) NSInteger switchFlag;
 
+/**数字大小写*/
+@property (nonatomic, assign)BOOL numAndLetter;
+
 + (instancetype)itemWithTitle:(NSString *)title placeHolder:(NSString *)placeHolder;
 - (instancetype)initWithTitle:(NSString *)title placeHolder:(NSString *)placeHolder;
 

@@ -298,7 +298,7 @@ static SystemConfig *temSingleInstance = nil;
 -(NSString *)getDeviceToken
 {
 //    return @"867066026385610";
-//    NSLog(@"token%@",(NSString *)[_systemConfig valueForKey:_DEVICE_TOKEN_]);
+    NSLog(@"token%@",(NSString *)[_systemConfig valueForKey:_DEVICE_TOKEN_]);
 //    NSLog(@"imei:%@",(NSString *)[_systemConfig valueForKey:_DEVICE_TOKEN_]);
     return  (NSString *)[_systemConfig valueForKey:_DEVICE_TOKEN_];
 }

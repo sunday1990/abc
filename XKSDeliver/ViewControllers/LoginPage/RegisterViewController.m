@@ -55,10 +55,14 @@
     phoneItem.keyBoardType = UIKeyboardTypePhonePad;
     
     passwordItem = [HCDistributeSpaceItem itemWithTitle:@"密码:" placeHolder:@"请填写密码"];
+    
+    passwordItem.numAndLetter = YES;
+    
     passwordItem.secureTextEntry = YES;
     
     confirmPwItem = [HCDistributeSpaceItem itemWithTitle:@"确认密码:" placeHolder:@"请再次输入密码"];
     //secureTextEntry
+    confirmPwItem.numAndLetter = YES;
     confirmPwItem.secureTextEntry = YES;
     
     cityItem = [HCDistributeSpaceItem itemWithTitle:[NSString stringWithFormat:@"%@:",self.model.dataTitleArray[0]] placeHolder:@""];
@@ -164,8 +168,12 @@
     }else{
         [contentDic setObject:phoneItem.subTitle forKey:@"cellPhone"];
     }
+   
     if (passwordItem.subTitle.length<=0) {
         ALERT_HUD(self.view, @"填写密码");
+        return;
+    }else if (passwordItem.subTitle.length<6){
+        ALERT_HUD(self.view, @"密码不得少于6位");
         return;
     }else{
         [contentDic setObject:passwordItem.subTitle forKey:@"driverPwd"];

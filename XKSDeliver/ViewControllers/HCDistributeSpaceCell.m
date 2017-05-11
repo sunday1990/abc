@@ -10,7 +10,9 @@
 #import "SimpleSwitch.h"
 #import "ReactiveCocoa.h"
 
-@interface HCDistributeSpaceCell ()
+#define AlphaNum  @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+@interface HCDistributeSpaceCell ()<UITextFieldDelegate>
 {
     /**标题*/
     UILabel *_titleView;
@@ -108,6 +110,10 @@
     _subTitleView.keyboardType = _item.keyBoardType;
     _subTitleView.userInteractionEnabled = _item.canEdit;
     _subTitleView.secureTextEntry  = _item.secureTextEntry;
+    if (self.item.numAndLetter == YES) {
+        _subTitleView.delegate = self;
+    }
+
     [self setupAccessoryView];
     
     //底部分割线
@@ -142,6 +148,18 @@
     }else{
         self.accessoryView.userInteractionEnabled = NO;
     }
+}
+//定义UITextFiled的代理方法：
+- (BOOL)textField:(UITextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string {
+    
+    NSCharacterSet *cs;
+    cs = [[NSCharacterSet characterSetWithCharactersInString:AlphaNum] invertedSet];
+    NSString *filtered =
+    [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+    BOOL basic = [string isEqualToString:filtered];
+    return basic;
 }
 
 - (void)layoutSubviews{
