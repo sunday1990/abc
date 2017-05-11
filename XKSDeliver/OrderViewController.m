@@ -1412,7 +1412,7 @@ replacementString:(NSString *)string {
         }else{
             [self headerRefresh];
 
-            ALERT_HUD(self.view, successReturn[@"msg"]);
+            ALERT_HUD(self.view, @"错误的二维码");
         }
     } failed:^(id failed) {
         [self headerRefresh];
